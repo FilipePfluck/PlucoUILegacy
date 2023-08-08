@@ -12,6 +12,7 @@ export const conditions = {
     bottom: '&[data-side="bottom"]',
     left: '&[data-side="left"]',
 
-    ariaInvalid: '&[aria-invalid]',
+    ariaInvalid: '&[aria-invalid="true"]',
+    invalidWithin: '&:has([aria-invalid="true"])',
   },
 }

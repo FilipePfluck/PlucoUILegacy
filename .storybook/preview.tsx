@@ -49,7 +49,7 @@ const withBackground = (StoryFn) => {
     <div className={css({
       position: 'fixed',
       inset: '0px',
-      bg: 'gray.200',
+      bg: 'slate.1',
       p: '4',
       display: 'flex',
       justifyContent: 'center',
