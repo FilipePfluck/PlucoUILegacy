@@ -7,7 +7,7 @@ export const InputContainer = styled(
   cva({
     base: {
       maxW: 'full',
-      bg: 'mauve.2',
+      bg: 'mauve.3',
       boxShadow: 'md',
       transition: '0.2s',
 

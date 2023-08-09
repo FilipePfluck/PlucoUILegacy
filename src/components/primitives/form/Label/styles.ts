@@ -8,7 +8,7 @@ export const LabelContainer = styled(
       display: 'flex',
       align: 'center',
       gap: '2',
-      color: 'slate.10',
+      color: 'mauve.11',
       textStyle: 'bodyMd',
     },
   }),
@@ -18,7 +18,7 @@ export const LabelRequiredIndicator = styled(
   'span',
   cva({
     base: {
-      color: 'red.10',
+      color: 'red.11',
       fontSize: 'xs',
     },
   }),
