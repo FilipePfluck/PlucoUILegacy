@@ -9,6 +9,7 @@ import { Input } from '@/components/primitives/form/Input'
 
 import { css } from '@/styled-system/css'
 import { RegisterFormData, registerFormSchema } from './schema'
+import { PasswordInput } from '@/components/primitives/form/Input/PasswordInput'
 
 export const Signup = () => {
   const {
@@ -23,7 +24,10 @@ export const Signup = () => {
   const onSubmit: SubmitHandler<RegisterFormData> = (data) => console.log(data)
 
   return (
-    <form className={css({ w: '80' })} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className={css({ w: '80', display: 'flex', flexDir: 'column', gap: '2' })}
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <FormControl
         id="username"
         label="Username"
@@ -56,7 +60,7 @@ export const Signup = () => {
         isRequired
         errorMessage={errors?.password?.message}
       >
-        <Input icon={<MdLock />} {...register('password')} />
+        <PasswordInput icon={<MdLock />} {...register('password')} />
       </FormControl>
 
       <Button type="submit" disabled={isSubmitting} full>

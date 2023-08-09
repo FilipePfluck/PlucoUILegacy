@@ -1,12 +1,13 @@
 import { cva } from '@/styled-system/css'
 import { styled } from '@/styled-system/jsx'
+import { IconButton } from '../../buttons/IconButton'
 
 export const InputContainer = styled(
   'label',
   cva({
     base: {
       maxW: 'full',
-      bg: 'mauve.3',
+      bg: 'mauve.2',
       boxShadow: 'md',
       transition: '0.2s',
 
@@ -94,7 +95,7 @@ export const Input = styled(
         color: 'mauve.10',
       },
       _autofill: {
-        boxShadow: '0 0 0px 1000px rgba(0,0,0,0) inset',
+        boxShadow: '0 0 0px 1000px token(colors.mauve.2) inset',
       },
     },
 
@@ -133,19 +134,17 @@ export const InputIcon = styled(
 )
 
 export const InputIconButton = styled(
-  'button',
+  IconButton,
   cva({
     base: {
-      bg: 'transparent',
-      p: '1',
-      rounded: 'full',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      color: 'purple.400',
+      color: 'purple.8 !important',
       '.group:has(:disabled) &': {
-        color: 'gray.400',
+        color: 'mauve.10 !important',
       },
+      '.group:has([aria-invalid="true"]) &': {
+        color: 'red.8 !important',
+      },
+      ml: 'auto',
     },
   }),
 )

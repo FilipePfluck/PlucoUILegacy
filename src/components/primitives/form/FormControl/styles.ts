@@ -35,7 +35,7 @@ export const FormControlMessageContainer = styled(
       height: {
         auto: {},
         fixed: {
-          minH: '6',
+          minH: '4',
         },
       },
     },
@@ -49,8 +49,9 @@ export const HelperMessage = styled(
   'p',
   cva({
     base: {
-      textStyle: 'bodySm',
+      fontSize: 'xs',
       color: 'mauve.10',
+      lineHeight: '100%',
     },
   }),
 )
@@ -59,8 +60,9 @@ export const ErrorMessage = styled(
   'p',
   cva({
     base: {
-      textStyle: 'bodySm',
+      fontSize: 'xs',
       color: 'red.10',
+      lineHeight: '100%',
     },
   }),
 )

@@ -8,7 +8,6 @@ export const ButtonContainer = styled(
       display: 'flex',
       center: 'flex',
       rounded: 'md',
-      borderWidth: '1px',
       borderStyle: 'solid',
       transition: 'background 0.2s',
       cursor: 'pointer',
@@ -20,10 +19,7 @@ export const ButtonContainer = styled(
             base: 'purple.9',
             _hover: 'purple.10',
           },
-          borderColor: {
-            base: 'purple.6',
-            _hover: 'puprle.7',
-          },
+          borderWidth: '0px',
           color: 'white',
         },
         secondary: {
@@ -31,6 +27,7 @@ export const ButtonContainer = styled(
             base: 'transparent',
             _hover: 'purple.9',
           },
+          borderWidth: '1px',
           borderColor: 'purple.9',
           color: {
             base: 'purple.9',

@@ -1,6 +1,8 @@
 import * as S from './styles'
 
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
+import { Slot } from '@radix-ui/react-slot'
+
 import { Flex, HTMLStyledProps } from '@/styled-system/jsx'
 import { SimpleSpread } from '@/types/utils'
 import { Label } from '../Label'
@@ -37,20 +39,15 @@ export const FormControl = ({
       <Label isRequired={isRequired} htmlFor={`${id}-form-element`}>
         {label}
       </Label>
-      <Flex direction="column" gap="2" maxW="full">
-        {/* 
-          Note: the React doc considers this a pitfall
-          see: https://react.dev/reference/react/cloneElement
-          however, I don't see a clear alternative 
-          other than directly passing the aria-props to the inputs,
-          which would make the code more verbose.
-        */}
-        {React.cloneElement(children, {
-          id: `${id}-form-element`,
-          'aria-required': isRequired,
-          'aria-invalid': !!errorMessage,
-          'aria-describedby': `${id}-helper-message ${id}-error-message`,
-        })}
+      <Flex direction="column" gap="1" maxW="full">
+        <Slot
+          id={`${id}-form-element`}
+          aria-required={isRequired}
+          aria-invalid={!!errorMessage}
+          aria-describedby={`${id}-helper-message ${id}-error-message`}
+        >
+          {children}
+        </Slot>
         <S.FormControlMessageContainer height={messageContainerHeight}>
           {!errorMessage && helperMessage && (
             <S.HelperMessage id={`${id}-helper-message`}>
