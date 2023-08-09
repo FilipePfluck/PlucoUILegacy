@@ -1,3 +1,5 @@
+'use client'
+
 import { MdLock, MdVisibility, MdVisibilityOff } from 'react-icons/md'
 import { Input, InputProps } from '.'
 import { ForwardedRef, forwardRef, useState } from 'react'
