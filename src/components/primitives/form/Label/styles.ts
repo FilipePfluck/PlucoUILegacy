@@ -10,6 +10,7 @@ export const LabelContainer = styled(
       gap: '2',
       color: 'mauve.11',
       textStyle: 'bodyMd',
+      w: 'max-content',
     },
   }),
 )

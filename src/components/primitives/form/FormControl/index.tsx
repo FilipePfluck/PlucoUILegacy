@@ -31,23 +31,15 @@ export const FormControl = ({
   helperMessage,
   children,
   messageContainerHeight,
-  direction,
   ...props
 }: FormControlProps) => {
   return (
-    <S.FormControlContainer direction={direction} {...props}>
-      <Label isRequired={isRequired} htmlFor={`${id}-form-element`}>
-        {label}
-      </Label>
-      <Flex direction="column" gap="1" maxW="full">
-        <Slot
-          id={`${id}-form-element`}
-          aria-required={isRequired}
-          aria-invalid={!!errorMessage}
-          aria-describedby={`${id}-helper-message ${id}-error-message`}
-        >
-          {children}
-        </Slot>
+    <S.FormControlContainer {...props}>
+      <Flex w="full" align="center" justify="space-between">
+        <Label isRequired={isRequired} htmlFor={`${id}-form-element`}>
+          {label}
+        </Label>
+
         <S.FormControlMessageContainer height={messageContainerHeight}>
           {!errorMessage && helperMessage && (
             <S.HelperMessage id={`${id}-helper-message`}>
@@ -61,6 +53,15 @@ export const FormControl = ({
           )}
         </S.FormControlMessageContainer>
       </Flex>
+
+      <Slot
+        id={`${id}-form-element`}
+        aria-required={isRequired}
+        aria-invalid={!!errorMessage}
+        aria-describedby={`${id}-helper-message ${id}-error-message`}
+      >
+        {children}
+      </Slot>
     </S.FormControlContainer>
   )
 }

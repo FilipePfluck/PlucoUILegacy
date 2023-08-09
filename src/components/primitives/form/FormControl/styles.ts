@@ -51,7 +51,7 @@ export const HelperMessage = styled(
     base: {
       fontSize: 'xs',
       color: 'mauve.10',
-      lineHeight: '120%',
+      lineHeight: '100%',
     },
   }),
 )
@@ -62,7 +62,7 @@ export const ErrorMessage = styled(
     base: {
       fontSize: 'xs',
       color: 'red.10',
-      lineHeight: '120%',
+      lineHeight: '100%',
     },
   }),
 )
