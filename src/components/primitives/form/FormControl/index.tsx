@@ -38,14 +38,18 @@ export const FormControl = ({
         {label}
       </Label>
       <Flex direction="column" gap="2" maxW="full">
-        {React.createElement(children.type, {
-          ...{
-            ...children.props,
-            id: `${id}-form-element`,
-            'aria-required': isRequired,
-            'aria-invalid': !!errorMessage,
-            'aria-describedby': `${id}-helper-message ${id}-error-message`,
-          },
+        {/* 
+          Note: the React doc considers this a pitfall
+          see: https://react.dev/reference/react/cloneElement
+          however, I don't see a clear alternative 
+          other than directly passing the aria-props to the inputs,
+          which would make the code more verbose.
+        */}
+        {React.cloneElement(children, {
+          id: `${id}-form-element`,
+          'aria-required': isRequired,
+          'aria-invalid': !!errorMessage,
+          'aria-describedby': `${id}-helper-message ${id}-error-message`,
         })}
         <S.FormControlMessageContainer height={messageContainerHeight}>
           {!errorMessage && helperMessage && (
@@ -54,7 +58,7 @@ export const FormControl = ({
             </S.HelperMessage>
           )}
           {errorMessage && (
-            <S.ErrorMessage id={`${id}-error-message`}>
+            <S.ErrorMessage id={`${id}-error-message`} role="alert">
               {errorMessage}
             </S.ErrorMessage>
           )}

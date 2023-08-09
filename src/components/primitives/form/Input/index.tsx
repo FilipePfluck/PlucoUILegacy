@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { ForwardedRef, ReactNode, forwardRef } from 'react'
 
 import * as S from './styles'
 import { SimpleSpread } from '@/types/utils'
@@ -15,20 +15,18 @@ interface ExtraInputProps {
 
 type InputProps = SimpleSpread<HTMLStyledProps<'input'>, ExtraInputProps>
 
-export const Input = ({
-  icon,
-  leftElement,
-  rightElement,
-  size,
-  width,
-  ...props
-}: InputProps) => {
+const InputComponent = (
+  { icon, leftElement, rightElement, size, width, ...props }: InputProps,
+  ref: ForwardedRef<HTMLInputElement>,
+) => {
   return (
     <S.InputContainer size={size} width={width} className="group">
       {icon && <S.InputIcon>{icon}</S.InputIcon>}
       {leftElement}
-      <S.Input size={size} {...props} />
+      <S.Input size={size} ref={ref} {...props} />
       {rightElement}
     </S.InputContainer>
   )
 }
+
+export const Input = forwardRef<HTMLInputElement, InputProps>(InputComponent)
