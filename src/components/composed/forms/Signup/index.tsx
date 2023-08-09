@@ -63,7 +63,7 @@ export const Signup = () => {
         <PasswordInput icon={<MdLock />} {...register('password')} />
       </FormControl>
 
-      <Button type="submit" disabled={isSubmitting} full>
+      <Button type="submit" disabled={isSubmitting} full mt="2">
         Sign up
       </Button>
     </form>

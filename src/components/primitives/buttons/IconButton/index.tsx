@@ -1,7 +1,8 @@
-import { ButtonHTMLAttributes, ForwardedRef, forwardRef } from 'react'
+import { ForwardedRef, forwardRef } from 'react'
 import * as S from './styles'
+import { HTMLStyledProps } from '@/styled-system/jsx'
 
-interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IconButtonProps extends HTMLStyledProps<'button'> {
   bg?: 'transparent' | 'gray' | 'primary'
   size?: 'md' | 'lg'
   rounded?: 'md' | 'lg' | 'full'

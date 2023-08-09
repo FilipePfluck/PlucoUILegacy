@@ -1,7 +1,8 @@
-import { ButtonHTMLAttributes, ForwardedRef, forwardRef } from 'react'
+import { ForwardedRef, forwardRef } from 'react'
 import * as S from './styles'
+import { HTMLStyledProps } from '@/styled-system/jsx'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends HTMLStyledProps<'button'> {
   intent?: 'primary' | 'secondary'
   size?: 'sm' | 'md' | 'lg'
   full?: boolean
