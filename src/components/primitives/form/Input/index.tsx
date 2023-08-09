@@ -13,7 +13,7 @@ interface ExtraInputProps {
   roundedCorners?: 'none' | 'right' | 'left' | 'all'
 }
 
-type InputProps = SimpleSpread<HTMLStyledProps<'input'>, ExtraInputProps>
+export type InputProps = SimpleSpread<HTMLStyledProps<'input'>, ExtraInputProps>
 
 const InputComponent = (
   { icon, leftElement, rightElement, size, width, ...props }: InputProps,
