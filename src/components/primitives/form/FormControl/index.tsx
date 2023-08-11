@@ -14,8 +14,6 @@ interface ExtraFormControlProps {
   errorMessage?: string
   helperMessage?: string
   children: ReactElement
-  messageContainerHeight?: 'fixed' | 'auto'
-  direction?: 'column' | 'row'
 }
 
 type FormControlProps = SimpleSpread<
@@ -30,7 +28,6 @@ export const FormControl = ({
   errorMessage,
   helperMessage,
   children,
-  messageContainerHeight,
   ...props
 }: FormControlProps) => {
   return (
@@ -40,7 +37,7 @@ export const FormControl = ({
           {label}
         </Label>
 
-        <S.FormControlMessageContainer height={messageContainerHeight}>
+        <S.FormControlMessageContainer>
           {!errorMessage && helperMessage && (
             <S.HelperMessage id={`${id}-helper-message`}>
               {helperMessage}

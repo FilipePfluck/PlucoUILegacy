@@ -6,21 +6,9 @@ export const FormControlContainer = styled(
   cva({
     base: {
       display: 'flex',
+      flexDir: 'column',
       gap: '2',
       maxW: 'full',
-    },
-    variants: {
-      direction: {
-        row: {
-          flexDirection: 'row',
-        },
-        column: {
-          flexDirection: 'column',
-        },
-      },
-    },
-    defaultVariants: {
-      direction: 'column',
     },
   }),
 )
@@ -30,17 +18,6 @@ export const FormControlMessageContainer = styled(
   cva({
     base: {
       display: 'flex',
-    },
-    variants: {
-      height: {
-        auto: {},
-        fixed: {
-          minH: '4',
-        },
-      },
-    },
-    defaultVariants: {
-      height: 'fixed',
     },
   }),
 )
