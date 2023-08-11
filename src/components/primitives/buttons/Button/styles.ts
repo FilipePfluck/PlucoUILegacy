@@ -16,8 +16,8 @@ export const ButtonContainer = styled(
       intent: {
         primary: {
           bg: {
-            base: 'purple.9',
-            _hover: 'purple.10',
+            base: 'violet.9',
+            _hover: 'violet.10',
           },
           borderWidth: '0px',
           color: 'white',
@@ -25,12 +25,12 @@ export const ButtonContainer = styled(
         secondary: {
           bg: {
             base: 'transparent',
-            _hover: 'purple.9',
+            _hover: 'violet.9',
           },
           borderWidth: '1px',
-          borderColor: 'purple.9',
+          borderColor: 'violet.9',
           color: {
-            base: 'purple.9',
+            base: 'violet.9',
             _hover: 'white',
           },
         },

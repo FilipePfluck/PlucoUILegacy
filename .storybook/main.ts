@@ -29,6 +29,7 @@ const config: StorybookConfig = {
       //@ts-ignore
       ...config.resolve.alias,
       "@/hooks": path.resolve(__dirname, "../src/hooks"),
+      "@/panda": path.resolve(__dirname, "../panda"),
       "@/components": path.resolve(__dirname, "../src/components"),
       "@/styled-system": path.resolve(__dirname, "../styled-system"),
     };

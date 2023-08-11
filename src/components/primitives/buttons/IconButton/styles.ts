@@ -15,22 +15,22 @@ export const IconButton = styled(
         transparent: {
           bg: {
             base: 'transparent',
-            _hover: 'mauve.4',
+            _hover: 'mauve.2',
           },
           color: 'mauve.12',
         },
         gray: {
           bg: {
-            base: 'mauve.3',
-            _hover: 'mauve.4',
+            base: 'mauve.1',
+            _hover: 'mauve.2',
           },
-          color: 'purple.11',
+          color: 'violet.11',
           boxShadow: 'md',
         },
         primary: {
           bg: {
-            base: 'purple.9',
-            _hover: 'purple.10',
+            base: 'violet.9',
+            _hover: 'violet.10',
           },
           color: 'white',
         },

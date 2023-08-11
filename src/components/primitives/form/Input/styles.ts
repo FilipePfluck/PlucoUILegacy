@@ -7,7 +7,7 @@ export const InputContainer = styled(
   cva({
     base: {
       maxW: 'full',
-      bg: 'mauve.3',
+      bg: 'mauve.1',
       boxShadow: 'md',
       transition: '0.2s',
 
@@ -18,7 +18,7 @@ export const InputContainer = styled(
       borderWidth: '2px',
       borderColor: {
         base: 'mauve.7',
-        _focusWithin: 'purple.7',
+        _focusWithin: 'violet.7',
         _invalidWithin: 'red.7',
       },
       '&:has(:disabled)': {
@@ -123,11 +123,11 @@ export const InputIcon = styled(
       fontSize: 'md',
       transition: '0.2s',
       color: {
-        base: 'purple.8',
+        base: 'violet.8',
         // @ts-ignore
         '.group:has(:disabled) &': 'mauve.10',
         '.group:has([aria-invalid="true"]) &': 'red.8',
-        '.group:has(:focus-within) &': 'purple.8',
+        '.group:has(:focus-within) &': 'violet.8',
       },
     },
   }),
@@ -137,7 +137,7 @@ export const InputIconButton = styled(
   IconButton,
   cva({
     base: {
-      color: 'purple.8 !important',
+      color: 'violet.8 !important',
       '.group:has(:disabled) &': {
         color: 'mauve.10 !important',
       },

@@ -23,6 +23,7 @@
       "@/styled-system/*": [
         "./styled-system/*"
       ],
+      "@/panda/*": ["./panda/*"],
       "@/*": [
         "./src/*"
       ]

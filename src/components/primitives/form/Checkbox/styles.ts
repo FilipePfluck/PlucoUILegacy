@@ -6,7 +6,7 @@ export const Root = styled(
   Checkbox.Root,
   cva({
     base: {
-      bg: 'mauve.3',
+      bg: 'mauve.1',
       h: '6',
       w: '6',
       rounded: 'md',
@@ -20,7 +20,7 @@ export const Root = styled(
       ring: '2px',
 
       '&[aria-checked="true"]': {
-        borderColor: 'purple.8',
+        borderColor: 'violet.8',
       },
       _ariaInvalid: {
         borderColor: 'red.7',
@@ -36,7 +36,7 @@ export const Indicator = styled(
       h: '4',
       w: '4',
       rounded: 'sm',
-      bg: 'purple.8',
+      bg: 'violet.8',
       transition: '0.2s',
 
       animation: 'check',
