@@ -17,7 +17,7 @@ export const MessageExampleDropdown = () => {
   return (
     <Dropdown.Root>
       <Dropdown.Trigger data-testid="MessageDropdownTrigger" asChild>
-        <IconButton aria-label="More options">
+        <IconButton aria-label="More options" bg="gray" size="lg">
           <MdMoreVert />
         </IconButton>
       </Dropdown.Trigger>

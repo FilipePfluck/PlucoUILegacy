@@ -54,7 +54,7 @@ const withBackground = (StoryFn) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'flex-start'
-    }), 'dark') }>
+    })) }>
        <StoryFn/>
     </div>
   )
