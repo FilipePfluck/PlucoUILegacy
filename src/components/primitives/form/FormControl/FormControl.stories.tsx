@@ -15,7 +15,7 @@ export const Default: Story = {
   render: () => {
     return (
       <FormControl
-        helperMessage="We will never share your email with anyone"
+        helperMessage="We will never share it"
         id="email"
         label="Email"
         isRequired

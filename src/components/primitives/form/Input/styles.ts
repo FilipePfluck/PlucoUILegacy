@@ -7,7 +7,7 @@ export const InputContainer = styled(
   cva({
     base: {
       maxW: 'full',
-      bg: 'mauve.1',
+      bg: 'componentBg',
       boxShadow: 'md',
       transition: '0.2s',
 
@@ -95,7 +95,9 @@ export const Input = styled(
         color: 'mauve.10',
       },
       _autofill: {
-        boxShadow: '0 0 0px 1000px token(colors.mauve.2) inset',
+        boxShadow: '0 0 0px 1000px token(colors.componentBg) inset',
+        WebkitTextFillColor: 'token(colors.mauve.12)',
+        caretColor: 'mauve.12',
       },
     },
 
@@ -123,11 +125,11 @@ export const InputIcon = styled(
       fontSize: 'md',
       transition: '0.2s',
       color: {
-        base: 'violet.8',
+        base: 'violet.9',
         // @ts-ignore
-        '.group:has(:disabled) &': 'mauve.10',
-        '.group:has([aria-invalid="true"]) &': 'red.8',
-        '.group:has(:focus-within) &': 'violet.8',
+        '.group:has(:disabled) &': 'mauve.9',
+        '.group:has([aria-invalid="true"]) &': 'red.9',
+        '.group:has(:focus-within) &': 'violet.9',
       },
     },
   }),
@@ -137,12 +139,12 @@ export const InputIconButton = styled(
   IconButton,
   cva({
     base: {
-      color: 'violet.8 !important',
+      color: 'violet.9 !important',
       '.group:has(:disabled) &': {
-        color: 'mauve.10 !important',
+        color: 'mauve.9 !important',
       },
       '.group:has([aria-invalid="true"]) &': {
-        color: 'red.8 !important',
+        color: 'red.9 !important',
       },
       ml: 'auto',
     },

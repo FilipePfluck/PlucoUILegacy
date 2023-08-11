@@ -7,7 +7,7 @@ const contentStyles = cva({
   base: {
     px: '1',
     py: '2',
-    bg: 'mauve.1',
+    bg: 'componentBg',
     rounded: 'md',
     boxShadow: 'lg',
     _dataOpen: {
@@ -53,7 +53,7 @@ export const Arrow = styled(
   Dropdown.Arrow,
   cva({
     base: {
-      fill: 'mauve.1',
+      fill: 'componentBg',
     },
   }),
 )
@@ -62,7 +62,7 @@ const itemBaseStyles = css.raw({
   all: 'unset',
   px: '1',
   fontSize: 'xs',
-  color: 'violet.11',
+  color: 'menuText',
   lineHeight: '100%',
 
   position: 'relative',
@@ -76,14 +76,14 @@ const itemBaseStyles = css.raw({
   cursor: 'pointer',
 
   _dataDisabled: {
-    color: 'violet.10',
+    color: 'mauve.10',
     pointerEvents: 'none',
   },
 
   _dataHighlighted: {
     outline: 'none',
-    bg: 'violet.9',
-    color: 'white',
+    bg: 'highlight',
+    color: 'highlightText',
   },
 })
 
@@ -115,8 +115,8 @@ export const SubTrigger = styled(
       // but the trigger is not highlighted
       _dataOpen: {
         '&:not([data-highlighted])': {
-          bg: 'violet.5',
-          color: 'violet.11',
+          bg: 'subtleHightlight',
+          color: 'menuText',
         },
       },
     },
@@ -130,7 +130,7 @@ export const Label = styled(
       pl: '6',
       fontSize: 'xs',
       lineHeight: '200%',
-      color: 'mauve.11',
+      color: 'mauve.12',
     },
   }),
 )
@@ -141,7 +141,7 @@ export const Separator = styled(
     base: {
       h: '1px',
       m: '1',
-      bg: 'violet.200',
+      bg: 'separator',
     },
   }),
 )
@@ -169,10 +169,10 @@ export const RightSlot = styled(
       fontSize: 'xs',
 
       '[data-highlighted] &': {
-        color: 'white',
+        color: 'highlightText',
       },
 
-      '[data-disabled] &': { color: 'gray.10' },
+      '[data-disabled] &': { color: 'mauve.10' },
     },
   }),
 )

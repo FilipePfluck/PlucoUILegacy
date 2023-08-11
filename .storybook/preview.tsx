@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { css } from '../styled-system/css'
+import { css, cx } from '../styled-system/css'
 import '../src/app/global.css'
 
 import type { Preview } from "@storybook/react";
@@ -46,15 +46,15 @@ const WithMouseDetection = (StoryFn) => {
 
 const withBackground = (StoryFn) => {
   return (
-    <div className={css({
+    <div className={cx(css({
       position: 'fixed',
       inset: '0px',
-      bg: 'mauve.3',
+      bg: 'appBg',
       p: '4',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'flex-start'
-    })}>
+    }), 'dark') }>
        <StoryFn/>
     </div>
   )

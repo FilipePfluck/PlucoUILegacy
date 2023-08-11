@@ -6,7 +6,7 @@ export const Root = styled(
   Checkbox.Root,
   cva({
     base: {
-      bg: 'mauve.1',
+      bg: 'componentBg',
       h: '6',
       w: '6',
       rounded: 'md',

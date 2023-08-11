@@ -15,14 +15,14 @@ export const IconButton = styled(
         transparent: {
           bg: {
             base: 'transparent',
-            _hover: 'mauve.2',
+            _hover: 'hoveredComponentBg',
           },
           color: 'mauve.12',
         },
         gray: {
           bg: {
-            base: 'mauve.1',
-            _hover: 'mauve.2',
+            base: 'componentBg',
+            _hover: 'hoveredComponentBg',
           },
           color: 'violet.11',
           boxShadow: 'md',

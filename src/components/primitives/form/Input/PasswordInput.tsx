@@ -25,6 +25,7 @@ const PasswordInputComponent = (
         <S.InputIconButton
           aria-label={buttonAriaLabel}
           onClick={() => setShouldShowPassword((state) => !state)}
+          type="button"
         >
           {shouldShowPassowrd ? <MdVisibilityOff /> : <MdVisibility />}
         </S.InputIconButton>

@@ -19,7 +19,7 @@ export const RadioItem = styled(
     base: {
       display: 'flex',
       center: 'flex',
-      bg: { base: 'mauve.1', _hover: 'violet.1' },
+      bg: { base: 'componentBg', _hover: 'hoveredComponentBg' },
       borderColor: { base: 'mauve.7', _checked: 'violet.8' },
       borderStyle: 'solid',
       borderWidth: '2px',
