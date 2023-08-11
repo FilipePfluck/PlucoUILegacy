@@ -15,7 +15,7 @@ export const DropdownCheckboxItem = ({
   className,
   ...props
 }: DropdownItemProps) => {
-  const itemClassname = cx('dropdownItem', className)
+  const itemClassname = cx('menuItem', className)
 
   return (
     <S.CheckboxItem

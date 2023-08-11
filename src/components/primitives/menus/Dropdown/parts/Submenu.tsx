@@ -18,7 +18,7 @@ export const DropdownSub = ({
   className,
   ...props
 }: DropdownSubTriggerProps) => {
-  const triggerClassname = cx('dropdownItem', className)
+  const triggerClassname = cx('menuItem', className)
 
   return (
     <DropdownMenu.Sub {...props}>

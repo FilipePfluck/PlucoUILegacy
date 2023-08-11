@@ -34,7 +34,7 @@ const contentStyles = cva({
     itemPaddingLeft: {
       none: {},
       md: {
-        '& .dropdownItem': {
+        '& .menuItem': {
           pl: '6',
         },
       },
