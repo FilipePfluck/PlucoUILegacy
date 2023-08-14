@@ -1,14 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { RadixExampleMenu } from './implementations/ExampleMenu'
+import { MessageContextMenu } from './implementations/MessageContextMenu'
+import { ExampleContextMenu } from './implementations/ExampleContextMenu'
 
-const meta: Meta<typeof RadixExampleMenu> = {
-  component: RadixExampleMenu,
+const meta: Meta<typeof MessageContextMenu> = {
+  component: MessageContextMenu,
 }
 
 export default meta
-type Story = StoryObj<typeof RadixExampleMenu>
+type Story = StoryObj<typeof MessageContextMenu>
 
-export const RadixExample: Story = {
-  render: RadixExampleMenu,
+export const Message: Story = {
+  render: MessageContextMenu,
+}
+
+export const Example: Story = {
+  render: ExampleContextMenu,
 }

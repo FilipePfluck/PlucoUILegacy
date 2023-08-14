@@ -27,7 +27,7 @@ export const HelperMessage = styled(
   cva({
     base: {
       fontSize: 'xs',
-      color: 'mauve.10',
+      color: 'mauve.11',
       lineHeight: '100%',
     },
   }),
@@ -38,7 +38,7 @@ export const ErrorMessage = styled(
   cva({
     base: {
       fontSize: 'xs',
-      color: 'red.10',
+      color: 'red.11',
       lineHeight: '100%',
     },
   }),

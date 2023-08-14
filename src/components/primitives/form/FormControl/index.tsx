@@ -30,6 +30,14 @@ export const FormControl = ({
   children,
   ...props
 }: FormControlProps) => {
+  const showHelperMessage = !errorMessage && helperMessage
+
+  const describedByHelperMessage = showHelperMessage
+    ? `${id}-helper-message`
+    : ''
+
+  const describedByErrorMessage = errorMessage ? `${id}-error-message` : ''
+
   return (
     <S.FormControlContainer {...props}>
       <Flex w="full" align="center" justify="space-between">
@@ -38,7 +46,7 @@ export const FormControl = ({
         </Label>
 
         <S.FormControlMessageContainer>
-          {!errorMessage && helperMessage && (
+          {showHelperMessage && (
             <S.HelperMessage id={`${id}-helper-message`}>
               {helperMessage}
             </S.HelperMessage>
@@ -55,7 +63,7 @@ export const FormControl = ({
         id={`${id}-form-element`}
         aria-required={isRequired}
         aria-invalid={!!errorMessage}
-        aria-describedby={`${id}-helper-message ${id}-error-message`}
+        aria-describedby={`${describedByHelperMessage} ${describedByErrorMessage}`}
       >
         {children}
       </Slot>
