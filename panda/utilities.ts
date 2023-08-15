@@ -14,7 +14,7 @@ export const utilities = {
             '&:focus-visible': {
               outlineWidth: value,
               outlineStyle: 'solid',
-              outlineColor: 'token(colors.blue.500)',
+              outlineColor: 'token(colors.indigo.8)',
             },
           },
         }

@@ -55,3 +55,26 @@ export const Secondary: Story = {
     </div>
   ),
 }
+
+export const Danger: Story = {
+  render: () => (
+    <div
+      className={css({
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '4',
+      })}
+    >
+      <Button intent="danger" size="sm">
+        <p>Hello Storybook</p>
+      </Button>
+      <Button intent="danger" size="md">
+        Hello Storybook
+      </Button>
+      <Button intent="danger" size="lg">
+        Hello Storybook
+      </Button>
+    </div>
+  ),
+}

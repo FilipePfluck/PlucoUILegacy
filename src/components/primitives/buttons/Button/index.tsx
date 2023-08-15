@@ -3,7 +3,7 @@ import * as S from './styles'
 import { HTMLStyledProps } from '@/styled-system/jsx'
 
 interface ButtonProps extends HTMLStyledProps<'button'> {
-  intent?: 'primary' | 'secondary'
+  intent?: 'primary' | 'secondary' | 'danger'
   size?: 'sm' | 'md' | 'lg'
   full?: boolean
 }

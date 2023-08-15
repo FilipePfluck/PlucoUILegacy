@@ -8,9 +8,10 @@ export const ButtonContainer = styled(
       display: 'flex',
       center: 'flex',
       rounded: 'md',
-      borderStyle: 'solid',
       transition: 'background 0.2s',
       cursor: 'pointer',
+      borderWidth: '2px',
+      borderStyle: 'solid',
     },
     variants: {
       intent: {
@@ -19,20 +20,27 @@ export const ButtonContainer = styled(
             base: 'violet.9',
             _hover: 'violet.10',
           },
-          borderWidth: '0px',
           color: 'white',
+          borderColor: {
+            base: 'violet.9',
+            _hover: 'violet.10',
+          },
         },
         secondary: {
           bg: {
-            base: 'transparent',
-            _hover: 'violet.9',
+            base: 'mauve.4',
+            _hover: 'mauve.5',
           },
-          borderWidth: '1px',
-          borderColor: 'violet.9',
-          color: {
-            base: 'violet.9',
-            _hover: 'white',
+          borderColor: 'mauve.7',
+          color: 'mauve.11',
+        },
+        danger: {
+          bg: {
+            base: 'red.4',
+            _hover: 'red.5',
           },
+          borderColor: 'red.7',
+          color: 'red.11',
         },
       },
 
