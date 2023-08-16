@@ -5,7 +5,7 @@ import * as S from '../styles'
 
 import { MdDelete, MdEdit, MdReply, MdShare, MdPushPin } from 'react-icons/md'
 import { MenuItem } from '../parts/Item'
-import { MenuType } from '../types'
+import { MenuProps, MenuType } from '../types'
 import { styled } from '@/styled-system/jsx'
 
 const DropdownContent = styled(Dropdown.Content, S.menuContentStyles)
@@ -13,18 +13,10 @@ const ContextContent = styled(Context.Content, S.menuContentStyles)
 
 const DropdownArrow = styled(Dropdown.Arrow, S.menuArrowStyles)
 
-type GenericContent<T extends MenuType> = T extends 'dropdown'
-  ? Dropdown.DropdownMenuContentProps
-  : Context.ContextMenuContentProps
-
-type MessageMenuProps<T extends MenuType> = {
-  type: T
-} & GenericContent<T>
-
 export const MessageMenu = <T extends MenuType>({
   type,
   ...props
-}: MessageMenuProps<T>) => {
+}: MenuProps<T>) => {
   const Portal = type === 'dropdown' ? Dropdown.Portal : Context.Portal
   const Content = type === 'dropdown' ? DropdownContent : ContextContent
 

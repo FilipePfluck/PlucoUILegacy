@@ -7,7 +7,7 @@ import { MenuItem } from '../parts/Item'
 import { Submenu } from '../parts/Submenu'
 import { CheckboxItem } from '../parts/CheckboxItem'
 import { RadioItem } from '../parts/RadioItem'
-import { MenuType } from '../types'
+import { MenuProps, MenuType } from '../types'
 import { styled } from '@/styled-system/jsx'
 
 const DropdownContent = styled(Dropdown.Content, S.menuContentStyles)
@@ -21,18 +21,10 @@ const ContextSeparator = styled(Context.Separator, S.menuSeparatorStyles)
 const DropdownLabel = styled(Dropdown.Label, S.menuLabelStyles)
 const ContextLabel = styled(Context.Label, S.menuLabelStyles)
 
-type GenericContent<T extends MenuType> = T extends 'dropdown'
-  ? Dropdown.DropdownMenuContentProps
-  : Context.ContextMenuContentProps
-
-type RadixExampleMenuProps<T extends MenuType> = {
-  type: T
-} & GenericContent<T>
-
 export const RadixExampleMenu = <T extends MenuType>({
   type,
   ...props
-}: RadixExampleMenuProps<T>) => {
+}: MenuProps<T>) => {
   const [bookmarksChecked, setBookmarksChecked] = useState(true)
   const [urlsChecked, setUrlsChecked] = useState(false)
   const [person, setPerson] = useState('Pedro Duarte')
