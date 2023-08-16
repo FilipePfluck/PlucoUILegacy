@@ -12,7 +12,7 @@ describe('Dialog component', () => {
 
   render(
     <RadixDialog.Root>
-      <RadixDialog.Trigger asChild>
+      <RadixDialog.Trigger data-testid="Dialog-trigger" asChild>
         <Button intent="primary" size="md">
           Open the modal
         </Button>

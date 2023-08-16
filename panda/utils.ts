@@ -43,7 +43,7 @@ export const menuItemBaseStyles = css.raw({
 })
 
 export const menuContentBaseStyles = css.raw({
-  bg: 'gray.50',
+  bg: 'componentBg',
   rounded: 'md',
   boxShadow: 'lg',
 })

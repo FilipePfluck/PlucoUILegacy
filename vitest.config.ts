@@ -14,6 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@/styled-system': path.resolve(__dirname, './styled-system'),
+      '@/panda': path.resolve(__dirname, './panda'),
       '@': path.resolve(__dirname, './src'),
     },
   },
