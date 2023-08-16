@@ -105,4 +105,46 @@ export const keyframes: CssKeyframes = {
     '0%': { fontSize: '16px' },
     '100%': { fontSize: '96px' },
   },
+
+  // drawer animations
+  drawerSlideIn: {
+    '0%': { transform: 'var(--drawer-transform)' },
+    '100%': { transform: 'translate3d(0,0,0)' },
+  },
+  drawerSlideOut: {
+    '0%': { transform: 'translate3d(0,0,0)' },
+    '100%': { transform: 'var(--drawer-transform)' },
+  },
+  slideInFromRight: {
+    '0%': { transform: 'translate3d(100%,0,0)' },
+    '100%': { transform: 'translate3d(0,0,0)' },
+  },
+  slideOutToRight: {
+    '0%': { transform: 'translate3d(0,0,0)' },
+    '100%': { transform: 'translate3d(100%,0,0)' },
+  },
+  slideInFromBottom: {
+    '0%': { transform: 'translate3d(0,100%,0)' },
+    '100%': { transform: 'translate3d(0,0,0)' },
+  },
+  slideOutToBottom: {
+    '0%': { transform: 'translate3d(0,0,0)' },
+    '100%': { transform: 'translate3d(0,100%,0)' },
+  },
+  slideInFromLeft: {
+    '0%': { transform: 'translate3d(-100%,0,0)' },
+    '100%': { transform: 'translate3d(0,0,0)' },
+  },
+  slideOutToLeft: {
+    '0%': { transform: 'translate3d(0,0,0)' },
+    '100%': { transform: 'translate3d(-100%,0,0)' },
+  },
+  slideInFromTop: {
+    '0%': { transform: 'translate3d(0,-100%,0)' },
+    '100%': { transform: 'translate3d(0,0,0)' },
+  },
+  slideOutToTop: {
+    '0%': { transform: 'translate3d(0,0,0)' },
+    '100%': { transform: 'translate3d(0,-100%,0)' },
+  },
 }

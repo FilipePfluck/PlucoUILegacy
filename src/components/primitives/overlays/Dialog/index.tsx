@@ -36,7 +36,10 @@ export const Dialog = ({
   return (
     <Portal>
       <S.Overlay />
-      <S.Content {...props}>
+      <S.Content
+        {...(!description ? { 'aria-labeledby': undefined } : {})}
+        {...props}
+      >
         {(!!title || type === 'dialog') && (
           <S.Header>
             <S.Title>{title}</S.Title>
@@ -57,7 +60,7 @@ export const Dialog = ({
             w: 'calc(100% + 8px)',
           })}
         >
-          <S.Description>{description}</S.Description>
+          {description && <S.Description>{description}</S.Description>}
           {children}
           {type === 'alertDialog' && alertDialogProps && (
             <AlertButtonsContainer>
