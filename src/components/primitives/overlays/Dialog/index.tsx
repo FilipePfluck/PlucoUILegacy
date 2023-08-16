@@ -51,8 +51,8 @@ export const Dialog = ({
         )}
 
         <Scrollable
-          size="lg"
-          borderSize="lg"
+          size="md"
+          borderSize="md"
           className={css({
             w: 'calc(100% + 8px)',
           })}

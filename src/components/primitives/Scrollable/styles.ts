@@ -63,11 +63,11 @@ export const VerticalScroll = styled(
         },
         md: {
           _scrollbarThumb: {
-            border: '4px solid rgba(0,0,0,0)',
+            border: '5px solid rgba(0,0,0,0)',
             backgroundClip: 'padding-box',
           },
           '&::-webkit-scrollbar-thumb:hover': {
-            border: '4px solid rgba(0,0,0,0)',
+            border: '5px solid rgba(0,0,0,0)',
             backgroundClip: 'padding-box',
           },
         },

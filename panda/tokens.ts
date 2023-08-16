@@ -51,5 +51,8 @@ export const tokens = {
     unCheck: {
       value: 'unCheck 0.2s',
     },
+    scaleEmoji: {
+      value: 'scaleEmoji 0.2s forwards',
+    },
   },
 }

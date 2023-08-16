@@ -99,4 +99,10 @@ export const keyframes: CssKeyframes = {
     '0%': { opacity: 1, transform: 'scale(100%)' },
     '100%': { opacity: 0, transform: 'scale(0%)' },
   },
+
+  // animated modal
+  scaleEmoji: {
+    '0%': { fontSize: '16px' },
+    '100%': { fontSize: '96px' },
+  },
 }
