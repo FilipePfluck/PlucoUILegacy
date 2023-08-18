@@ -100,12 +100,6 @@ export const keyframes: CssKeyframes = {
     '100%': { opacity: 0, transform: 'scale(0%)' },
   },
 
-  // animated modal
-  scaleEmoji: {
-    '0%': { fontSize: '16px' },
-    '100%': { fontSize: '96px' },
-  },
-
   // drawer animations
   drawerSlideIn: {
     '0%': { transform: 'var(--drawer-transform)' },
@@ -115,36 +109,33 @@ export const keyframes: CssKeyframes = {
     '0%': { transform: 'translate3d(0,0,0)' },
     '100%': { transform: 'var(--drawer-transform)' },
   },
-  slideInFromRight: {
-    '0%': { transform: 'translate3d(100%,0,0)' },
-    '100%': { transform: 'translate3d(0,0,0)' },
+
+  // collapsible
+  expand: {
+    '0%': {
+      height: '0px',
+    },
+    '100%': {
+      height: 'var(--radix-collapsible-content-height);',
+    },
   },
-  slideOutToRight: {
-    '0%': { transform: 'translate3d(0,0,0)' },
-    '100%': { transform: 'translate3d(100%,0,0)' },
+  collapse: {
+    '0%': {
+      height: 'var(--radix-collapsible-content-height);',
+    },
+    '100%': {
+      height: '0px',
+    },
   },
-  slideInFromBottom: {
-    '0%': { transform: 'translate3d(0,100%,0)' },
-    '100%': { transform: 'translate3d(0,0,0)' },
-  },
-  slideOutToBottom: {
-    '0%': { transform: 'translate3d(0,0,0)' },
-    '100%': { transform: 'translate3d(0,100%,0)' },
-  },
-  slideInFromLeft: {
-    '0%': { transform: 'translate3d(-100%,0,0)' },
-    '100%': { transform: 'translate3d(0,0,0)' },
-  },
-  slideOutToLeft: {
-    '0%': { transform: 'translate3d(0,0,0)' },
-    '100%': { transform: 'translate3d(-100%,0,0)' },
-  },
-  slideInFromTop: {
-    '0%': { transform: 'translate3d(0,-100%,0)' },
-    '100%': { transform: 'translate3d(0,0,0)' },
-  },
-  slideOutToTop: {
-    '0%': { transform: 'translate3d(0,0,0)' },
-    '100%': { transform: 'translate3d(0,-100%,0)' },
+
+  fadeInAndScale: {
+    '0%': {
+      opacity: 0,
+      transform: 'scale(0.96)',
+    },
+    '100%': {
+      opacity: 1,
+      transform: 'scale(1)',
+    },
   },
 }

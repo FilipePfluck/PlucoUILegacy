@@ -51,38 +51,17 @@ export const tokens = {
     unCheck: {
       value: 'unCheck 0.2s',
     },
-    scaleEmoji: {
-      value: 'scaleEmoji 0.2s forwards',
-    },
-    slideInFromRight: {
-      value: 'slideInFromRight 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideOutToRight: {
-      value: 'slideOutToRight 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideInFromBottom: {
-      value: 'slideInFromBottom 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideOutToBottom: {
-      value: 'slideOutToBottom 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideInFromLeft: {
-      value: 'slideInFromLeft 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideOutToLeft: {
-      value: 'slideOutToLeft 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideInFromTop: {
-      value: 'slideInFromTop 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
-    slideOutToTop: {
-      value: 'slideOutToTop 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
-    },
     drawerSlideIn: {
       value: 'drawerSlideIn 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
     },
     drawerSlideOut: {
       value: 'drawerSlideOut 0.2s cubic-bezier(0.22, 1, 0.36, 1)',
+    },
+    expand: {
+      value: 'expand 0.3s',
+    },
+    collapse: {
+      value: 'collapse 0.2s',
     },
   },
 }

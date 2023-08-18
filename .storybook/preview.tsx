@@ -53,7 +53,8 @@ const withBackground = (StoryFn) => {
       p: '4',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'flex-start'
+      alignItems: 'flex-start',
+      overflowY: 'auto'
     })) }>
        <StoryFn/>
     </div>
