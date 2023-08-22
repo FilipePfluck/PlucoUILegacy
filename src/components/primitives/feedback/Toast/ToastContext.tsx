@@ -22,6 +22,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
   const [toasts, setToasts] = useState<ToastWithId[]>([])
   const timeoutsRef = useRef<number[]>([])
 
+  // clear timeouts when the component unmounts
   useEffect(() => {
     return () => {
       // Here eslint is warning that the ref .current could have changed
