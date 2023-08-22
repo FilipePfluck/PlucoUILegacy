@@ -28,6 +28,8 @@ const ToastContent = () => {
         toast({
           title: 'Scheduled: Catch up',
           description: 'Tuesday, August 29, 2023 at 1:18 PM',
+          intent: 'success',
+          withIcon: true,
         })
       }}
     >

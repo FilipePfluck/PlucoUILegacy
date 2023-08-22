@@ -56,6 +56,7 @@ export const ToastProvider = ({ children }: { children: ReactNode }) => {
   }
 
   const toast = (props: ToastProps) => {
+    console.log(props.type)
     const id = Date.now()
     setToasts([...toasts, { id: String(id), onClose: closeToast, ...props }])
   }
