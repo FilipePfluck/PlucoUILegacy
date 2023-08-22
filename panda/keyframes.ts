@@ -138,4 +138,37 @@ export const keyframes: CssKeyframes = {
       transform: 'scale(1)',
     },
   },
+
+  // toast
+
+  slideInToast: {
+    '0%': {
+      opacity: 0,
+      transform: 'translateX(calc(100% + 24px))',
+    },
+    '100%': {
+      opacity: 1,
+      transform: 'translateX(0)',
+    },
+  },
+
+  slideOutToast: {
+    '0%': {
+      opacity: 1,
+      transform: 'translateX(0)',
+    },
+    '100%': {
+      opacity: 0,
+      transform: 'translateX(calc(100% + 24px))',
+    },
+  },
+
+  swipeOutToast: {
+    '0%': {
+      transform: 'translateX(var(--radix-toast-swipe-end-x))',
+    },
+    '100%': {
+      transform: 'translateX(calc(100% + 24px))',
+    },
+  },
 }

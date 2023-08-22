@@ -66,11 +66,15 @@ export const ButtonContainer = styled(
         true: {
           w: 'full',
         },
+        false: {
+          w: 'max-content',
+        },
       },
     },
     defaultVariants: {
       intent: 'primary',
       size: 'md',
+      full: false,
     },
   }),
 )

@@ -134,5 +134,29 @@ export const utilities = {
         }
       },
     },
+    gridColumns: {
+      values: { type: 'string' },
+      transform(value: string) {
+        return {
+          gridTemplateColumns: value,
+        }
+      },
+    },
+    gridRows: {
+      values: { type: 'string' },
+      transform(value: string) {
+        return {
+          gridTemplateRows: value,
+        }
+      },
+    },
+    gridAreas: {
+      values: { type: 'string' },
+      transform(value: string) {
+        return {
+          gridTemplateAreas: value,
+        }
+      },
+    },
   },
 }

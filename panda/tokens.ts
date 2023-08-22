@@ -63,5 +63,14 @@ export const tokens = {
     collapse: {
       value: 'collapse 0.2s',
     },
+    slideInToast: {
+      value: 'slideInToast 0.2s',
+    },
+    slideOutToast: {
+      value: 'slideOutToast 0.2s',
+    },
+    swipeOutToast: {
+      value: 'swipeOutToast 0.1s',
+    },
   },
 }
