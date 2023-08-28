@@ -20,7 +20,7 @@ export const Root = styled(
       ring: '2px',
 
       '&[aria-checked="true"]': {
-        borderColor: 'violet.8',
+        borderColor: 'violet.9',
       },
       _ariaInvalid: {
         borderColor: 'red.7',
@@ -36,7 +36,7 @@ export const Indicator = styled(
       h: '4',
       w: '4',
       rounded: 'sm',
-      bg: 'violet.8',
+      bg: 'violet.9',
       transition: '0.2s',
 
       animation: 'check',

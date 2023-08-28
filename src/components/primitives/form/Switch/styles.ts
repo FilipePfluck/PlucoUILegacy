@@ -14,7 +14,7 @@ export const Root = styled(
       boxShadow: 'sm',
       WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
       ring: '2px',
-      '&[data-state="checked"]': { bg: 'violet.8' },
+      '&[data-state="checked"]': { bg: 'violet.9' },
     },
   }),
 )
