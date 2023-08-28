@@ -82,7 +82,7 @@ export const FruitGrid = () => {
 
         <Flex gap="2" align="center">
           <S.CollapsibleDivider />
-          <Collapsible.Trigger>
+          <Collapsible.Trigger asChild>
             <IconButton
               aria-label={isExpanded ? 'Show less fruits' : 'Show more fruits'}
               ref={collapsibleTriggerRef}
