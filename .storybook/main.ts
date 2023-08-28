@@ -1,5 +1,6 @@
 import type { StorybookConfig } from "@storybook/nextjs";
 import path from "path";
+import { isCssProperty } from '../styled-system/jsx'
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
@@ -15,6 +16,13 @@ const config: StorybookConfig = {
   },
   docs: {
     autodocs: "tag",
+  },
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      propFilter: (prop) => (!isCssProperty(prop.name)),
+    },
   },
   webpackFinal: async (config, { configType }) => {
     //@ts-ignore
