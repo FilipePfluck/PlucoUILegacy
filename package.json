@@ -15,6 +15,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@ark-ui/react": "^0.15.0",
     "@hookform/resolvers": "^3.2.0",
     "@radix-ui/colors": "^2.0.0-alpha.5",
     "@radix-ui/react-accordion": "^1.1.2",
@@ -49,6 +50,7 @@
   },
   "devDependencies": {
     "@pandacss/dev": "^0.10.0",
+    "@playwright/test": "^1.38.1",
     "@rocketseat/eslint-config": "^1.2.0",
     "@storybook/addon-a11y": "^7.0.24",
     "@storybook/addon-essentials": "^7.2.1",
