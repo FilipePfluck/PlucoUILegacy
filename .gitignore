@@ -36,6 +36,8 @@ next-env.d.ts
 
 # panda
 /styled-system
+
+#playwright
 /test-results/
 /playwright-report/
 /playwright/.cache/
