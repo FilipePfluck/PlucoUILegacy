@@ -10,6 +10,17 @@ const meta: Meta<typeof Button> = {
 export default meta
 type Story = StoryObj<typeof Button>
 
+export const button: Story = {
+  args: {
+    children: 'Hello storybook',
+  },
+  parameters: {
+    controls: {
+      include: ['size', 'intent'],
+    },
+  },
+}
+
 export const Primary: Story = {
   render: () => (
     <div

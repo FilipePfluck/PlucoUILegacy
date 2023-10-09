@@ -12,7 +12,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
     "@ark-ui/react": "^0.15.0",
@@ -49,7 +50,9 @@
     "zod": "^3.20.2"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.7.3",
     "@pandacss/dev": "^0.10.0",
+    "@playwright/experimental-ct-react": "^1.38.1",
     "@playwright/test": "^1.38.1",
     "@rocketseat/eslint-config": "^1.2.0",
     "@storybook/addon-a11y": "^7.0.24",
