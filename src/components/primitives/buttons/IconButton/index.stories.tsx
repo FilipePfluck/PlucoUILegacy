@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import { IconButton } from './index'
-import { MdAdd } from 'react-icons/md'
+import { MdAdd, MdClose } from 'react-icons/md'
 import { Flex } from '@/styled-system/jsx'
 
 const meta: Meta<typeof IconButton> = {
@@ -10,6 +10,17 @@ const meta: Meta<typeof IconButton> = {
 
 export default meta
 type Story = StoryObj<typeof IconButton>
+
+export const iconButton: Story = {
+  args: {
+    children: <MdClose />,
+  },
+  parameters: {
+    controls: {
+      include: ['size', 'intent', 'roundness'],
+    },
+  },
+}
 
 export const Primary: Story = {
   render: () => (

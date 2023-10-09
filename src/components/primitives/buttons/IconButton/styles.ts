@@ -46,7 +46,7 @@ const iconButtonStyles = cva({
         color: 'mauve.11',
       },
     },
-    rounded: {
+    roundness: {
       md: {
         rounded: 'md',
       },
@@ -67,7 +67,7 @@ const iconButtonStyles = cva({
   },
   defaultVariants: {
     intent: 'primary',
-    rounded: 'full',
+    roundness: 'full',
     size: 'md',
   },
 })
